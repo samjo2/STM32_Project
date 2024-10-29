@@ -1,52 +1,46 @@
-# Prerequisites
+# Ignore build folders
+/Debug/
+/Release/
+/build/
+
+# Ignore STM32CubeMX generated files
+*.ioc
+*.launch
+*.log
+
+# Ignore IDE-specific files (e.g., STM32CubeIDE, Keil, IAR, Eclipse)
+*.mxproject
+*.project
+*.cproject
+*.settings/
+/.vscode/
+/.metadata/
+*.elf
+*.bin
+*.map
+*.hex
+*.lst
 *.d
 
-# Object files
+# Ignore compiler/linker intermediate files
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
+*.d
 *.a
-*.la
-*.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Ignore temporary or backup files
+*.bak
+*.tmp
+*.swp
+*.swo
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Ignore auto-generated HAL and SPL files
+/Drivers/CMSIS/DSP_Lib/
+/Drivers/CMSIS/Lib/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Ignore configuration files that vary across developers
+*.user
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Ignore CubeMX repository (optional)
+Middlewares/
+Drivers/
